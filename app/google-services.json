@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "665698033760",
+    "project_id": "legisdata-1d45f",
+    "storage_bucket": "legisdata-1d45f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:665698033760:android:2206ca7454784855c4a305",
+        "android_client_info": {
+          "package_name": "br.com.ifsul.legisdata"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtxO3JDbMGAydHJWd3nBl-wafv9xLINEE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

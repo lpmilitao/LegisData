@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    tools:context=".externo.CadastroActivity">
+
+    <Button
+        android:id="@+id/fazerCadastro"
+        android:layout_width="238dp"
+        android:layout_height="60dp"
+
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="41dp"
+        android:text="Cadastre-se"
+        android:textColor="@color/brown"
+        app:backgroundTint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/campoSenhaCadastro" />
+
+    <TextView
+        android:id="@+id/senhaTitulo"
+        android:layout_width="195dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/amiko"
+        android:text="Insira sua senha"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/campoEmailCadastro" />
+
+    <EditText
+        android:id="@+id/campoSenhaCadastro"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="13dp"
+        android:clipToOutline="false"
+        android:ems="10"
+        android:fontFamily="@font/amiko"
+        android:hyphenationFrequency="normal"
+        android:inputType="text"
+        android:text="*****"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#B3463F3A"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/senhaTitulo" />
+
+    <EditText
+        android:id="@+id/campoEmailCadastro"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="8dp"
+        android:clipToOutline="false"
+        android:ems="10"
+        android:fontFamily="@font/amiko"
+        android:hyphenationFrequency="normal"
+        android:inputType="text"
+        android:text="fulano@gmail.com"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/brown"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailTitulo" />
+
+    <TextView
+        android:id="@+id/emailTitulo"
+        android:layout_width="211dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="145dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/amiko"
+        android:text="Insira seu email"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/campoEmailCadastro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/apresentacaoText" />
+
+    <ImageView
+        android:id="@+id/voltarFromCadastro"
+        android:layout_width="56dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/seta_marrom" />
+
+    <TextView
+        android:id="@+id/cadastroTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="131dp"
+        android:fontFamily="@font/amiko"
+        android:text="Cadastre-se"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/apresentacaoText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/apresentacaoText"
+        android:layout_width="301dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="55dp"
+        android:text="Bem-vindo ao  LegisData! Aqui você poderá checar os dados de deputados brasileiros de forma mais fácil."
+        android:textAlignment="center"
+        android:textColor="@color/brown"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cadastroTitulo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

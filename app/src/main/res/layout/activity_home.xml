@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".externo.HomeActivity">
+
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="243dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="84dp"
+        android:fontFamily="@font/amiko"
+        android:text="Seja bem-vindo ao LegisData"
+        android:textAlignment="center"
+        android:textColor="@color/brown"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoHome" />
+
+    <ImageView
+        android:id="@+id/logoHome"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="96dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <Button
+        android:id="@+id/botaoCadastro"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginBottom="160dp"
+        android:text="Cadastro"
+        app:backgroundTint="#E8953D"
+        app:iconTint="#E8953D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/botaoLogin"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginBottom="16dp"
+        android:text="Login"
+
+        app:backgroundTint="#E8953D"
+        app:cornerRadius="200dp"
+        app:iconTint="#E8953D"
+        app:layout_constraintBottom_toTopOf="@+id/botaoCadastro"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="#E8953D" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

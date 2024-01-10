@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/partidos"
+    android:icon="@drawable/baseline_list_24"
+    android:title="Partidos"
+    />
+
+<item
+    android:id="@+id/deputados"
+    android:icon="@drawable/baseline_people_24"
+    android:title="Deputados"
+    />
+
+<item
+    android:id="@+id/ajustes"
+    android:icon="@drawable/baseline_settings_24"
+    android:title="Ajustes"
+    />
+
+</menu>
